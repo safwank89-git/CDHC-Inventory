@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Web Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Dashboard</h2>
+    <button onclick="showSection('home')">🏠 Home</button>
+    <button onclick="showSection('settings')">⚙️ Settings</button>
+    <button onclick="showSection('about')">ℹ️ About</button>
+  </div>
+
+  <div class="content">
+    <section id="home" class="active">
+      <h1>Welcome!</h1>
+      <p>This is your custom web GUI dashboard.</p>
+    </section>
+
+    <section id="settings">
+      <h1>Settings</h1>
+      <p>Adjust your preferences here.</p>
+    </section>
+
+    <section id="about">
+      <h1>About</h1>
+      <p>Built using HTML, CSS, and JavaScript — hosted on GitHub Pages.</p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
